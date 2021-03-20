@@ -9,7 +9,7 @@
 		float x1,y1,x2,y2,distance; //variable declaration with data type float
 		printf("Enter point one(x1,y1)\n"); //printf function calling
 		scanf("%f %f",&x1,&y1); //scanf function for taking x1, y1 cordinate
-		printf("Enter point two(x1,y1)\n"); //printf function calling
+		printf("Enter point two(x2,y2)\n"); //printf function calling
 		scanf("%f %f",&x2,&y2); //scanf function for taking x2, y2 cordinate
 		distance=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)); //variable defintion for Euclidean distance
 			printf("distance between(%f,%f)&(%f,%f)is %f\n",x1,y1,x2,y1,distance);  //printf function calling
