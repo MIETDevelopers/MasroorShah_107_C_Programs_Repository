@@ -30,4 +30,5 @@ int main(){  //main function
         printf("Element is present in the array at position %d .",i+1);
     else
         printf("Element is not present in the array.\n");
+return 0; 
 }
