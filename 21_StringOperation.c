@@ -4,7 +4,7 @@
 #include <stdio.h>		//Pre-process directive to include standard input and output functions header file
 
 int main(void) {
-  char name[] = "Ishav Verma";
+  char name[] = "Mr Bean";
 
   printf("%c \n", *name);     	// Output will be I
   printf("%c \n", *(name+3));	// Output will be A
