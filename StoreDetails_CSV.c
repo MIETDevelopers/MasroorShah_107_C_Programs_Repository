@@ -11,7 +11,7 @@ struct s{    //Using structures to create a user defined data type
 int main(){   	//Main function
 	struct s a[5], b[5];
 	FILE *fptr;
-	fptr=fopen("45_Store_Details.csv","wb");   //For opening the file
+	fptr=fopen("StoreDetails.csv","wb");   //For opening the file
 	for (int i=0; i<5; ++i)    //For loop to take details from the user
 	{
 		fflush(stdin);
