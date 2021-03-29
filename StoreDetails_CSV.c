@@ -1,6 +1,6 @@
 /*
 Name: Masroor Hussain Shah
-Program: To interact with user and take student's name, roll number and attendance percentage and stores it in a .csv file
+Program Purpose: To interact with user and take student's name, roll number and attendance percentage and stores it in a .csv file
 */
 #include<stdio.h>     //Pre-processor directive to include standard input and output functions header file
 struct s{    //Using structures to create a user defined data type
