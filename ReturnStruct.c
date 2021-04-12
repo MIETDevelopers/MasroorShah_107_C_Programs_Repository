@@ -3,30 +3,32 @@ Name: Masroor Hussain Shah
 Program purpose: To demonstrate function implementation which returns a structure
 */
 
-#include <stdio.h>  //Pre-processor directive to include standard input and output functions header file
+#include<stdio.h>  //Pre-process directive to include standard input and output functions header file
+
+/*
+structure is defined above all functions so it is global.
+*/
+
 struct student
 {
-    char name[50];
-    int age;
+    char name[20];
+    int roll_no;
+    int marks;
 };
-//Function prototype
-struct student getInfo();
-int main(){  //Main function
-    struct student s;
-    s = getInfo();
-    //Printf function calling
-    printf("\nName: %s", s.name);   //For printing name
-    printf("\nAge: %d", s.age);  //For printing age
-    return 0;   //Return function
-    }
-struct student getInfo(){
-    struct student s1;
 
-    printf("Enter name: ");
-    scanf ("%[^\n]%*c", s1.name);  //For reading name
+void print_struct(char name[], int roll_no, int marks);  //declaration
 
-    printf("\nEnter age: ");
-    scanf("%d", &s1.age);  //For reading age
+int main()   //main function
+{
+    struct student stu = {"Kim", 1, 78};  
+    print_struct(stu.name, stu.roll_no, stu.marks);
+    return 0;  //return function
+}
 
-    return s1;  //Return function
+void print_struct(char name[], int roll_no, int marks)
+{
+    printf("Name: %s\n", name);   //printf function calling
+    printf("Roll no: %d\n", roll_no);
+    printf("Marks: %d\n", marks);
+    printf("\n");
 }
